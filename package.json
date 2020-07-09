@@ -1,0 +1,28 @@
+{
+  "name": "hot-resturaunt",
+  "version": "1.0.0",
+  "description": "Application to set up reservations for a reastaurant.",
+  "main": "server.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karleighponnock/Hot-Resturaunt.git"
+  },
+  "keywords": [
+    "class",
+    "project",
+    "express",
+    "node"
+  ],
+  "author": "Alex Isayyid, Paul DelPadre, Karleigh Ponnock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karleighponnock/Hot-Resturaunt/issues"
+  },
+  "homepage": "https://github.com/karleighponnock/Hot-Resturaunt#readme"
+}
