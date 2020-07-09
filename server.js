@@ -36,4 +36,7 @@ app.get("/home", function(req, res) {
     res.sendFile(path.join(__dirname, "tables.html"));
   });
   
- 
+ // Displays all tables
+app.get("/api/tables", function(req, res) {
+    return res.json(tables);
+  });
