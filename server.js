@@ -43,3 +43,15 @@ app.get("/home", function(req, res) {
 app.get("/api/tables", function(req, res) {
     return res.json(tables);
   });
+
+  app.post("/api/tables", function(req, res) {
+    // req.body hosts is equal to the JSON post sent from the user
+    // This works because of our body parsing middleware
+    var tables = req.body;
+    
+  });
+    app.listen(PORT, function() {
+  console.log("App listening on PORT " + PORT);
+});
+
+
