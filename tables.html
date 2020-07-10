@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tables</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
 <body>
+    <div class="container">
+
+        <div class="jumbotron">
+          <h1 class="text-center"></span> Hot Restaurant</h1>
+          <hr>
+          <h2 class="text-center">Current Reservations and Waiting List</h2>
+          <br>
     
+          <div class="text-center">
+            <a href="/reserve"><button class="btn btn-lg btn-danger"></span> Make Reservation</button></a>
+            <a href="/"><button class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-lg-12">
+    
+            <!-- Used Tables -->
+            <div class="card">
+              <div class="card-header">
+                <h4>Reservations</h4>
+              </div>
+              <div class="card-body">
+                <ul id="tableList" class="list-group"><li class="list-group-item mt-4"><h3>Table #1</h3><hr><h3>ID: cust1</h3><h3>Name: john</h3><h3>Email: john@gmail.com</h3><h3>Phone: 407-444-4444</h3></li></ul>
+              </div>
+            </div>
+    
+            <!-- Wait List -->
+            <div class="card mt-4">
+              <div class="card-header">
+                <h4>Wait List</h4>
+              </div>
+              <div class="card-body">
+                <ul id="waitList" class="list-group"><li class="list-group-item mt-4"><h3>Table #1</h3><hr><h3>ID: bob</h3><h3>Name: bob</h3><h3>Email: bob@gmail.com</h3><h3>Phone: 407-444-1111</h3></li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+        <footer class="footer mt-2">
+          <div class="container">
+            <p>Control Panel</p>
+            <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API
+                Wait List</a>
+          </p></div>
+        </footer>
+    
+      </div>
 </body>
 </html>
