@@ -56,7 +56,7 @@
                     <label for="id">Unique ID</label>
                     <input type="text" class="form-control" id="id">
                   </div>
-                  <button type="submit" class="btn btn-primary submit">Submit</button>
+                  <button type="submit" class="btn btn-primary submit" id = "add-btn">Submit</button>
                 </form>
               </div>
             </div>
@@ -89,7 +89,7 @@
 
     
           // Question: What does this code do??
-          $.post("/api/tables", newtables)
+          $.post("/api/tables", tables)
             .then(function(data) {
               console.log("add.html", data);
               alert("Adding character...");
