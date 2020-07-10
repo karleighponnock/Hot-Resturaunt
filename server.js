@@ -2,6 +2,9 @@
 // =============================================================
 var express = require("express");
 var path = require("path");
+var tablesReservation = [];
+var tablesWaitlist = []
+
 
 // Sets up the Express App
 // =============================================================
