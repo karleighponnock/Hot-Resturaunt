@@ -33,7 +33,15 @@
 
     </div>
 
-
+    <script type="text/javascript">
+          // Question: What does this code do??
+          $.post("/api/tables", tables)
+            .then(function(data) {
+              console.log("add.html", data);
+              alert("Adding character...");
+            });
+        
+      </script>
 
 </body>
 
